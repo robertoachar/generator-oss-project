@@ -1,0 +1,49 @@
+{
+  "name": "generator-oss-project",
+  "version": "0.1.0",
+  "description": "Yeoman generator for open source projects.",
+  "author": "Roberto Achar <robertoachar@gmail.com>",
+  "homepage": "https://github.com/robertoachar/generator-oss-project#readme",
+  "keywords": [
+    "yeoman",
+    "yeoman-generator",
+    "node-js",
+    "jest",
+    "editorconfig",
+    "eslint",
+    "travis",
+    "appveyor",
+    "circleci",
+    "badges"
+  ],
+  "main": "generators/app/index.js",
+  "files": [
+    "generators"
+  ],
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint generators/**/*.js test/**/*.js",
+    "mocha": "nyc --reporter=html --reporter=text mocha test/*.js",
+    "test": "npm run lint && npm run mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertoachar/generator-oss-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoachar/generator-oss-project/issues"
+  },
+  "dependencies": {
+    "yeoman-generator": "1.1.1"
+  },
+  "devDependencies": {
+    "@types/yeoman-generator": "1.0.2",
+    "coveralls": "2.13.1",
+    "eslint": "3.19.0",
+    "mocha": "3.4.1",
+    "nyc": "10.3.2",
+    "yeoman-assert": "3.0.0",
+    "yeoman-test": "1.6.0"
+  },
+  "license": "MIT"
+}

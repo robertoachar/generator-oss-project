@@ -6,6 +6,9 @@ npm-debug.log*
 # Coverage directory used by tools like istanbul
 coverage
 
+# nyc test coverage
+.nyc_output
+
 # Dependency directories
 node_modules/
 
@@ -17,3 +20,6 @@ node_modules/
 
 # Optional REPL history
 .node_repl_history
+
+# Demo Project
+awesome-project

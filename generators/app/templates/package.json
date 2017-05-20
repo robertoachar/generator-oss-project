@@ -1,0 +1,38 @@
+{
+  "name": "<%= project%>",
+  "version": "1.0.0",
+  "description": "<%= description%>",
+  "author": "<%= name%> <<%=email%>>",
+  "homepage": "https://github.com/<%= username%>/<%= project%>#readme",
+  "keywords": [
+    "node-js"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "start": "nodemon src/index.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= username%>/<%= project%>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= username%>/<%= project%>/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "latest",
+    "coveralls": "latest",
+    "eslint": "latest",
+    "jest": "latest",
+    "nodemon": "latest"
+  },
+  "license": "MIT"
+}

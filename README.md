@@ -49,7 +49,7 @@ This generator provides the following features:
 * Install Yeoman
 
 ```bash
-$ npm install -g yeoman
+$ npm install -g yo
 ```
 
 * Install Generator

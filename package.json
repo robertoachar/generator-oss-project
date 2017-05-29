@@ -17,6 +17,9 @@
     "badges"
   ],
   "main": "generators/app/index.js",
+  "files": [
+    "generators/*"
+  ],
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint generators/**/*.js test/**/*.js",

@@ -18,7 +18,7 @@
   ],
   "main": "generators/app/index.js",
   "files": [
-    "generators/*"
+    "generators"
   ],
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",

@@ -1,6 +1,6 @@
 {
   "name": "generator-oss-project",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "Yeoman generator for open source projects.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "homepage": "https://github.com/robertoachar/generator-oss-project#readme",
@@ -17,9 +17,6 @@
     "badges"
   ],
   "main": "generators/app/index.js",
-  "files": [
-    "generators"
-  ],
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint generators/**/*.js test/**/*.js",

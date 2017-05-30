@@ -23,7 +23,10 @@ describe('TESTS', () => {
     it('should create a project', (done) => {
       const files = require('../generators/app/files');
 
-      assert.file(files);
+      let i = 0;
+      for (i = 0; i < files.length; i++) {
+        assert.file(files[i].destination);
+      }
 
       done();
     });

@@ -11,7 +11,7 @@
 
 Long description.
 
-## Installation
+# Installation
 
 Install package
 
@@ -19,7 +19,7 @@ Install package
 $ npm install --save <%= project %>
 ```
 
-## Usage
+# Usage
 
 Say `It works!`
 
@@ -28,12 +28,12 @@ const lib = require('<%= project %>');
 
 lib.hello((err, message) => {
   if (err) return console.error(err);
-  
+
   console.log(message);
 });
 ```
 
-## Development
+# Development
 
 * Cloning the repo
 
@@ -58,10 +58,10 @@ Running code coverage                    | `npm run coverage`
 Running lint + tests                     | `npm test`
 Sending coverage results to Coveralls.io | `npm run coveralls`
 
-## Author
+# Author
 [<%= name%>](https://twitter.com/<%= username %>)
 
-## License
+# License
 [MIT](https://github.com/<%= username %>/<%= project %>/blob/master/LICENSE)
 
 [travis-badge]: https://travis-ci.org/<%= username %>/<%= project %>.svg?branch=master

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.10
+
+* **Fix**: .gitattributes template
+
+## 1.0.3-9
+
+* **Fix**: npm publish
+
 ## 1.0.2
 
 * **Fix**: Installation instructions

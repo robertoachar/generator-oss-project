@@ -7,10 +7,11 @@
   "keywords": [
     "yeoman",
     "yeoman-generator",
-    "node-js",
+    "node",
     "jest",
     "editorconfig",
     "eslint",
+    "prettier",
     "travis",
     "appveyor",
     "circleci",

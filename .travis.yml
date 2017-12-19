@@ -1,12 +1,17 @@
 language: node_js
+
 node_js:
-  - "6"
+  - "9"
+
 install:
   - npm install
+
 script:
   - npm test
+
 after_script:
   - npm run coveralls
+
 notifications:
   email:
     on_success: never

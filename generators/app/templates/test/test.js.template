@@ -1,9 +1,6 @@
-'use strict';
-
 const lib = require('../src');
 
 describe('TESTS', () => {
-
   test('Basic test', (done) => {
     lib.hello((err, message) => {
       expect(err).toBeNull();
@@ -12,5 +9,4 @@ describe('TESTS', () => {
       done();
     });
   });
-
 });

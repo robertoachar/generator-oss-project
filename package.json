@@ -15,6 +15,7 @@
     "travis",
     "appveyor",
     "circleci",
+    "coveralls",
     "badges"
   ],
   "main": "generators/app/index.js",

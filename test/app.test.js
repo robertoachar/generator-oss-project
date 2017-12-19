@@ -4,9 +4,7 @@ const path = require('path');
 const validate = require('../generators/app/validate');
 
 describe('TESTS', () => {
-
   describe('App Tests', () => {
-
     before((done) => {
       test
         .run(path.join(__dirname, '../generators/app'))
@@ -33,7 +31,6 @@ describe('TESTS', () => {
   });
 
   describe('Validate Tests', () => {
-
     it('should return true with name', (done) => {
       const message = validate.validateName('Roberto Achar');
 
@@ -81,7 +78,5 @@ describe('TESTS', () => {
 
       done();
     });
-
   });
-
 });

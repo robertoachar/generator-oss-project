@@ -2,7 +2,6 @@ const Generator = require('yeoman-generator');
 const validate = require('./validate');
 
 module.exports = class extends Generator {
-
   initializing() {
     this.log('OSS Project Generator');
     this.log();

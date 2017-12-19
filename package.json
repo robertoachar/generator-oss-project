@@ -19,10 +19,11 @@
   ],
   "main": "generators/app/index.js",
   "scripts": {
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
     "lint": "eslint generators/**/*.js test/**/*.js",
-    "mocha": "nyc --reporter=html --reporter=text mocha test/*.js",
-    "test": "npm run lint && npm run mocha"
+    "test": "npm run lint && npm run jest"
   },
   "repository": {
     "type": "git",
@@ -35,13 +36,13 @@
     "yeoman-generator": "2.0.1"
   },
   "devDependencies": {
+    "@types/jest": "21.1.8",
     "@types/yeoman-generator": "2.0.0",
-    "coveralls": "2.13.1",
+    "coveralls": "3.0.0",
     "eslint": "4.13.1",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.4.0",
-    "mocha": "3.4.1",
-    "nyc": "10.3.2",
+    "jest": "22.0.0",
     "prettier": "1.9.2",
     "yeoman-assert": "3.1.0",
     "yeoman-test": "1.7.0"

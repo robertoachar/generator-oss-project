@@ -1,16 +1,17 @@
 const assert = require('yeoman-assert');
 const test = require('yeoman-test');
 const path = require('path');
+
 const validate = require('../generators/app/validate');
 
 describe('TESTS', () => {
-  describe('App Tests', () => {
-    before((done) => {
+  describe('Generator Tests', () => {
+    beforeAll((done) => {
       test
         .run(path.join(__dirname, '../generators/app'))
         .withPrompts({
           project: 'awesome-project',
-          describe: 'An awesome project',
+          description: 'An awesome project',
           name: 'Roberto Achar',
           email: 'robertoachar@gmail.com',
           username: 'robertoachar'

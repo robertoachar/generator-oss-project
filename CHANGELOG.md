@@ -1,6 +1,25 @@
 # Changelog
 
-## 2.0.0
+## v2.1.0
+
+### Template Updates
+
+* **ci**: update node version
+* **docs**: update CHANGELOG
+* **style**: improve prettier
+
+### Generator Updates
+
+* **build**: update dependencies
+* **ci**: update node version
+* **refactor**: format using airbnb
+* **refactor**: improve codebase
+* **style**: add airbnb
+* **style**: improve prettier
+* **test**: improve tests
+* **test**: split tests
+
+## v2.0.0
 
 ### Template Updates
 
@@ -27,22 +46,22 @@
 * **style**: add prettier
 * **test**: change testing tool from mocha to jest
 
-## 1.0.10
+## v1.0.10
 
 * **fix**: .gitattributes template
 
-## 1.0.3-9
+## v1.0.3-9
 
 * **fix**: npm publish
 
-## 1.0.2
+## v1.0.2
 
 * **fix**: Installation instructions
 
-## 1.0.1
+## v1.0.1
 
 * **docs**: Updating README
 
-## 1.0.0
+## v1.0.0
 
 * Initial release

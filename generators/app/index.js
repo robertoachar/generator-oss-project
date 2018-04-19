@@ -1,16 +1,17 @@
 const Generator = require('yeoman-generator');
 
+const files = require('./files');
 const validate = require('./validate');
 
 module.exports = class extends Generator {
   initializing() {
     this.log('OSS Project Generator');
+    this.log('❤️  Made with love by Roberto Achar');
     this.log();
   }
 
   prompting() {
     const done = this.async();
-    const store = true;
 
     const prompts = [
       {
@@ -30,21 +31,21 @@ module.exports = class extends Generator {
         name: 'name',
         message: 'What is your name?',
         validate: validate.validateName,
-        store: store
+        store: true
       },
       {
         type: 'input',
         name: 'email',
         message: 'What is your email?',
         validate: validate.validateEmail,
-        store: store
+        store: true
       },
       {
         type: 'input',
         name: 'username',
         message: 'What is your GitHub username?',
         validate: validate.validateUsername,
-        store: store
+        store: true
       }
     ];
 
@@ -59,14 +60,14 @@ module.exports = class extends Generator {
     this.log('🚀  Generating project...');
     this.log();
 
-    const files = require('./files');
+    const { project, description, name, email, username } = this.props;
 
     const templates = {
-      project: this.props.project,
-      description: this.props.description,
-      name: this.props.name,
-      email: this.props.email,
-      username: this.props.username,
+      project,
+      description,
+      name,
+      email,
+      username,
       year: new Date().getFullYear()
     };
 

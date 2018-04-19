@@ -1,6 +1,6 @@
 {
   "name": "generator-oss-project",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Yeoman generator for open source projects.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "homepage": "https://github.com/robertoachar/generator-oss-project#readme",
@@ -34,18 +34,20 @@
     "url": "https://github.com/robertoachar/generator-oss-project/issues"
   },
   "dependencies": {
-    "yeoman-generator": "2.0.1"
+    "yeoman-generator": "2.0.4"
   },
   "devDependencies": {
-    "@types/jest": "21.1.8",
-    "@types/yeoman-generator": "2.0.0",
+    "@types/jest": "22.2.3",
+    "@types/yeoman-generator": "2.0.3",
     "coveralls": "3.0.0",
-    "eslint": "4.13.1",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
     "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-prettier": "2.4.0",
-    "jest": "22.0.0",
-    "prettier": "1.9.2",
-    "yeoman-assert": "3.1.0",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "jest": "22.4.3",
+    "prettier": "1.12.1",
+    "yeoman-assert": "3.1.1",
     "yeoman-test": "1.7.0"
   },
   "license": "MIT"

@@ -2,6 +2,7 @@ const assert = require('yeoman-assert');
 const test = require('yeoman-test');
 const path = require('path');
 
+const files = require('../generators/app/files');
 const validate = require('../generators/app/validate');
 
 describe('TESTS', () => {
@@ -19,11 +20,10 @@ describe('TESTS', () => {
         .on('end', done);
     });
 
-    it('should create a project', (done) => {
-      const files = require('../generators/app/files');
-
+    test('should create a project', (done) => {
       let i = 0;
-      for (i = 0; i < files.length; i++) {
+      // TODO
+      for (i = 0; i < files.length; i += 1) {
         assert.file(files[i].destination);
       }
 
@@ -32,7 +32,7 @@ describe('TESTS', () => {
   });
 
   describe('Validate Tests', () => {
-    it('should return true with name', (done) => {
+    test('should return true with name', (done) => {
       const message = validate.validateName('Roberto Achar');
 
       assert.equal(message, true);
@@ -40,7 +40,7 @@ describe('TESTS', () => {
       done();
     });
 
-    it('should return an error without name', (done) => {
+    test('should return an error without name', (done) => {
       const message = validate.validateName('');
 
       assert.equal(message, 'You need to enter your name');
@@ -48,7 +48,7 @@ describe('TESTS', () => {
       done();
     });
 
-    it('should return true with email', (done) => {
+    test('should return true with email', (done) => {
       const message = validate.validateEmail('robertoachar@gmail.com');
 
       assert.equal(message, true);
@@ -56,7 +56,7 @@ describe('TESTS', () => {
       done();
     });
 
-    it('should return an error without email', (done) => {
+    test('should return an error without email', (done) => {
       const message = validate.validateEmail('');
 
       assert.equal(message, 'You need to enter your email');
@@ -64,7 +64,7 @@ describe('TESTS', () => {
       done();
     });
 
-    it('should return true with username', (done) => {
+    test('should return true with username', (done) => {
       const message = validate.validateUsername('robertoachar');
 
       assert.equal(message, true);
@@ -72,7 +72,7 @@ describe('TESTS', () => {
       done();
     });
 
-    it('should return an error without username', (done) => {
+    test('should return an error without username', (done) => {
       const message = validate.validateUsername('');
 
       assert.equal(message, 'You need to enter your username');

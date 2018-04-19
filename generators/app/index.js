@@ -1,5 +1,6 @@
 const Generator = require('yeoman-generator');
 
+const files = require('./files');
 const validate = require('./validate');
 
 module.exports = class extends Generator {
@@ -10,7 +11,6 @@ module.exports = class extends Generator {
 
   prompting() {
     const done = this.async();
-    const store = true;
 
     const prompts = [
       {
@@ -30,21 +30,21 @@ module.exports = class extends Generator {
         name: 'name',
         message: 'What is your name?',
         validate: validate.validateName,
-        store: store
+        store: true
       },
       {
         type: 'input',
         name: 'email',
         message: 'What is your email?',
         validate: validate.validateEmail,
-        store: store
+        store: true
       },
       {
         type: 'input',
         name: 'username',
         message: 'What is your GitHub username?',
         validate: validate.validateUsername,
-        store: store
+        store: true
       }
     ];
 
@@ -58,8 +58,6 @@ module.exports = class extends Generator {
     this.log();
     this.log('🚀  Generating project...');
     this.log();
-
-    const files = require('./files');
 
     const templates = {
       project: this.props.project,

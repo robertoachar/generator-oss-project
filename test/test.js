@@ -20,19 +20,17 @@ describe('TESTS', () => {
         .on('end', done);
     });
 
-    test('should create a project', (done) => {
-      let i = 0;
-      // TODO
-      for (i = 0; i < files.length; i += 1) {
-        assert.file(files[i].destination);
-      }
+    it('should create a project', (done) => {
+      files.forEach((file) => {
+        assert.file(file.destination);
+      });
 
       done();
     });
   });
 
   describe('Validate Tests', () => {
-    test('should return true with name', (done) => {
+    it('should return true with name', (done) => {
       const message = validate.validateName('Roberto Achar');
 
       assert.equal(message, true);
@@ -40,7 +38,7 @@ describe('TESTS', () => {
       done();
     });
 
-    test('should return an error without name', (done) => {
+    it('should return an error without name', (done) => {
       const message = validate.validateName('');
 
       assert.equal(message, 'You need to enter your name');
@@ -48,7 +46,7 @@ describe('TESTS', () => {
       done();
     });
 
-    test('should return true with email', (done) => {
+    it('should return true with email', (done) => {
       const message = validate.validateEmail('robertoachar@gmail.com');
 
       assert.equal(message, true);
@@ -56,7 +54,7 @@ describe('TESTS', () => {
       done();
     });
 
-    test('should return an error without email', (done) => {
+    it('should return an error without email', (done) => {
       const message = validate.validateEmail('');
 
       assert.equal(message, 'You need to enter your email');
@@ -64,7 +62,7 @@ describe('TESTS', () => {
       done();
     });
 
-    test('should return true with username', (done) => {
+    it('should return true with username', (done) => {
       const message = validate.validateUsername('robertoachar');
 
       assert.equal(message, true);
@@ -72,7 +70,7 @@ describe('TESTS', () => {
       done();
     });
 
-    test('should return an error without username', (done) => {
+    it('should return an error without username', (done) => {
       const message = validate.validateUsername('');
 
       assert.equal(message, 'You need to enter your username');

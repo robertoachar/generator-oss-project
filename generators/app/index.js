@@ -6,6 +6,7 @@ const validate = require('./validate');
 module.exports = class extends Generator {
   initializing() {
     this.log('OSS Project Generator');
+    this.log('❤️  Made with love by Roberto Achar');
     this.log();
   }
 
@@ -59,12 +60,14 @@ module.exports = class extends Generator {
     this.log('🚀  Generating project...');
     this.log();
 
+    const { project, description, name, email, username } = this.props;
+
     const templates = {
-      project: this.props.project,
-      description: this.props.description,
-      name: this.props.name,
-      email: this.props.email,
-      username: this.props.username,
+      project,
+      description,
+      name,
+      email,
+      username,
       year: new Date().getFullYear()
     };
 

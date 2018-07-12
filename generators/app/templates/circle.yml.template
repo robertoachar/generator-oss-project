@@ -1,11 +1,9 @@
-machine:
-  node:
-    version: 8.11.1
-
-dependencies:
-  override:
-    - npm install
-
-test:
-  override:
-    - npm test
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.11.3
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test

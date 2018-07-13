@@ -121,6 +121,10 @@ $ yo oss-project
 
 [Roberto Achar](https://twitter.com/robertoachar)
 
+## Contributors
+
+[Paulo Rezende](https://twitter.com/pauloedurezende)
+
 ## License
 
 [MIT](https://github.com/robertoachar/generator-oss-project/blob/master/LICENSE)

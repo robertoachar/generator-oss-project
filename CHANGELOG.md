@@ -4,19 +4,19 @@
 
 ### Template Updates
 
-ci: update circleci node version
-ci: update circleci to v2
-docs(template): update README
-refactor: update .gitignore
+* **ci**: update circleci node version
+* **ci**: update circleci to v2
+* **docs**: update README
+* **refactor**: update .gitignore
 
-### Generator Templates
+### Generator Updates
 
-build: update dependencies
-ci: update circleci node version
-ci: update circleci to v2
-docs: add contributor
-docs: update README
-refactor: update .gitignore
+* **build**: update dependencies
+* **ci**: update circleci node version
+* **ci**: update circleci to v2
+* **docs**: add contributor
+* **docs**: update README
+* **refactor**: update .gitignore
 
 ## v2.1.1
 

@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.2.0
+
+### Template Updates
+
+ci: update circleci node version
+ci: update circleci to v2
+docs(template): update README
+refactor: update .gitignore
+
+### Generator Templates
+
+build: update dependencies
+ci: update circleci node version
+ci: update circleci to v2
+docs: add contributor
+docs: update README
+refactor: update .gitignore
+
 ## v2.1.1
 
 * **fix**: remove airbnb config

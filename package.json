@@ -34,21 +34,21 @@
     "url": "https://github.com/robertoachar/generator-oss-project/issues"
   },
   "dependencies": {
-    "yeoman-generator": "2.0.4"
+    "yeoman-generator": "3.0.0"
   },
   "devDependencies": {
-    "@types/jest": "22.2.3",
+    "@types/jest": "23.1.5",
     "@types/yeoman-generator": "2.0.3",
-    "coveralls": "3.0.0",
+    "coveralls": "3.0.2",
     "eslint": "4.19.1",
-    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-airbnb-base": "13.0.0",
     "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-import": "2.11.0",
-    "eslint-plugin-prettier": "2.6.0",
-    "jest": "22.4.3",
-    "prettier": "1.12.1",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "jest": "23.4.0",
+    "prettier": "1.13.7",
     "yeoman-assert": "3.1.1",
-    "yeoman-test": "1.7.0"
+    "yeoman-test": "1.8.0"
   },
   "license": "MIT"
 }

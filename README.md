@@ -22,7 +22,7 @@ This generator provides the following features:
 * **README.md** and **CHANGELOG.md** with information about the project, installation, usage, development, author and license.
 * **Badges** for Travis, Appveyor, CircleCI, Coveralls, npm and License.
 
-# Project files
+## Project files
 
 ```text
 .
@@ -46,7 +46,7 @@ This generator provides the following features:
 |--- README.md
 ```
 
-# Installation
+## Installation
 
 * Install Yeoman
 
@@ -60,7 +60,7 @@ $ npm install -g yo
 $ npm install -g generator-oss-project
 ```
 
-# Usage
+## Usage
 
 * Creating a project
 
@@ -86,7 +86,7 @@ $ yo oss-project
 | Running lint + tests                     | `npm test`          |
 | Sending coverage results to Coveralls.io | `npm run coveralls` |
 
-# Development
+## Development
 
 ### Prerequisites
 
@@ -117,11 +117,15 @@ $ npm link
 $ yo oss-project
 ```
 
-# Author
+## Author
 
 [Roberto Achar](https://twitter.com/robertoachar)
 
-# License
+## Contributors
+
+[Paulo Rezende](https://twitter.com/pauloedurezende)
+
+## License
 
 [MIT](https://github.com/robertoachar/generator-oss-project/blob/master/LICENSE)
 

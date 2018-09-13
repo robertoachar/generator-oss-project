@@ -1,3 +1,1 @@
-module.exports.hello = (done) => {
-  return done(null, 'It works!');
-};
+module.exports.hello = () => new Promise((resolve) => resolve('It works!'));

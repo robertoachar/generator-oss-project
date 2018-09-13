@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.3.0
+
+### Template Updates
+
+- **feature**: enforce npm registry
+- **refactor**: change from callback to promise
+- **refactor**: update .gitignore
+- **style**: format markdown using prettier
+- **style**: format package.json using prettier
+
+### Generator Updates
+
+- **build**: update dependencies
+- **feature**: enforce npm registry
+- **refactor**: update .gitignore
+
 ## v2.2.1
 
 ### Generator Updates

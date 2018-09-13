@@ -37,19 +37,19 @@ lib.hello((err, message) => {
 
 ## Development
 
-* Cloning the repo
+- Cloning the repo
 
 ```bash
 $ git clone https://github.com/<%= username %>/<%= project %>.git
 ```
 
-* Installing dependencies
+- Installing dependencies
 
 ```bash
 $ npm install
 ```
 
-* Running scripts
+- Running scripts
 
 | Action                                   | Usage               |
 | ---------------------------------------- | ------------------- |

@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.3.1
+
+### Template Updates
+
+- **ci**: update node version
+- **docs**: update README
+- **refactor**: update .gitignore
+
+### Generator Updates
+
+- **build**: update dependencies
+- **ci**: update node version
+- **docs**: update README
+- **refactor**: update .gitignore
+
 ## v2.3.0
 
 ### Template Updates

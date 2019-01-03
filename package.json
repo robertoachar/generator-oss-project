@@ -1,6 +1,6 @@
 {
   "name": "generator-oss-project",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Yeoman generator for open source projects.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "contributors": [

@@ -6,6 +6,7 @@
 
 - **feature**: add esm
 - **refactor**: update .gitignore
+- **style**: add module
 
 ### Generator Updates
 

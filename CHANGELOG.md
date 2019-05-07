@@ -1,5 +1,20 @@
 # Changelog
 
+## v3.0.0
+
+### Template Updates
+
+- **feature**: add esm
+- **refactor**: update .gitignore
+
+### Generator Updates
+
+- **build**: update dependencies
+- **docs**: update README
+- **feature**: add esm
+- **fix**: change generator entry point
+- **refactor**: update .gitignore
+
 ## v2.3.1
 
 ### Template Updates

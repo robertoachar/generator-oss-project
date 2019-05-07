@@ -11,6 +11,7 @@
     "yeoman",
     "yeoman-generator",
     "node",
+    "esm",
     "jest",
     "editorconfig",
     "eslint",
@@ -21,7 +22,9 @@
     "coveralls",
     "badges"
   ],
-  "main": "generators/app/main.js",
+  "files": [
+    "generators"
+  ],
   "scripts": {
     "coverage": "jest --colors --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",

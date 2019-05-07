@@ -7,7 +7,7 @@ import files from '../generators/app/files';
 describe('Generator Tests', () => {
   beforeAll((done) => {
     test
-      .run(path.join(__dirname, '../generators/app/main.js'))
+      .run(path.join(__dirname, '../generators/app'))
       .withPrompts({
         project: 'awesome-project',
         description: 'An awesome project',

@@ -13,6 +13,7 @@
 This generator provides the following features:
 
 - **src** and **test** folder as a starter point to build your project.
+- **esm** as a simple, babel-less, bundle-less ECMAScript module loader.
 - **EditorConfig** to help you define and maintain consistent coding styles between different editors.
 - **ESLint** to provide a pluggable linting utility for JavaScript.
 - **Prettier** as an opinionated code formatter.
@@ -43,6 +44,7 @@ This generator provides the following features:
 |--- CHANGELOG.md
 |--- circle.yml
 |--- LICENSE
+|--- main.js
 |--- package.json
 |--- README.md
 ```

@@ -1,9 +1,9 @@
-const lib = require('../src');
+import hello from '../src';
 
 describe('TESTS', () => {
   test('Basic test', (done) => {
-    lib.hello().then((message) => {
-      expect(message).toBe('It works!');
+    hello().then((message) => {
+      expect(message).toBe('Hello!');
       done();
     });
   });

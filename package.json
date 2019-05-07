@@ -1,6 +1,6 @@
 {
   "name": "generator-oss-project",
-  "version": "2.3.1",
+  "version": "3.0.0",
   "description": "Yeoman generator for open source projects.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "contributors": [
@@ -11,6 +11,7 @@
     "yeoman",
     "yeoman-generator",
     "node",
+    "esm",
     "jest",
     "editorconfig",
     "eslint",
@@ -21,7 +22,9 @@
     "coveralls",
     "badges"
   ],
-  "main": "generators/app/index.js",
+  "files": [
+    "generators"
+  ],
   "scripts": {
     "coverage": "jest --colors --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
@@ -37,19 +40,21 @@
     "url": "https://github.com/robertoachar/generator-oss-project/issues"
   },
   "dependencies": {
+    "esm": "3.2.22",
     "yeoman-generator": "3.2.0"
   },
   "devDependencies": {
-    "@types/jest": "23.3.11",
-    "@types/yeoman-generator": "3.0.1",
-    "coveralls": "3.0.2",
-    "eslint": "5.11.1",
+    "@babel/preset-env": "7.4.4",
+    "@types/jest": "24.0.12",
+    "@types/yeoman-generator": "3.1.2",
+    "coveralls": "3.0.3",
+    "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "3.3.0",
-    "eslint-plugin-import": "2.14.0",
+    "eslint-config-prettier": "4.2.0",
+    "eslint-plugin-import": "2.17.2",
     "eslint-plugin-prettier": "3.0.1",
-    "jest": "23.6.0",
-    "prettier": "1.15.3",
+    "jest": "24.8.0",
+    "prettier": "1.17.0",
     "yeoman-assert": "3.1.1",
     "yeoman-test": "1.9.1"
   },

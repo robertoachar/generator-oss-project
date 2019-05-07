@@ -85,8 +85,11 @@ class OSSGenerator extends Generator {
     this.log('📦  Installing dependencies...');
     this.log();
 
+    this.npmInstall(['esm']);
+
     this.npmInstall(
       [
+        '@babel/preset-env',
         '@types/jest',
         'coveralls',
         'eslint',

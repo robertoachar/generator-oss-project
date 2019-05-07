@@ -1,4 +1,4 @@
-module.exports = [
+const files = [
   { template: 'src/index.js.template', destination: 'src/index.js' },
   { template: 'test/test.js.template', destination: 'test/test.js' },
   { template: 'appveyor.yml.template', destination: 'appveyor.yml' },
@@ -16,3 +16,5 @@ module.exports = [
   { template: 'README.md.template', destination: 'README.md' },
   { template: 'travis.yml.template', destination: '.travis.yml' }
 ];
+
+export default files;

@@ -1,23 +1,25 @@
-module.exports.validateName = (value) => {
+const validateName = (value) => {
   if (value.length === 0) {
-    return 'You need to enter your name';
+    return 'Enter your name';
   }
 
   return true;
 };
 
-module.exports.validateEmail = (value) => {
+const validateEmail = (value) => {
   if (value.length === 0) {
-    return 'You need to enter your email';
+    return 'Enter your email';
   }
 
   return true;
 };
 
-module.exports.validateUsername = (value) => {
+const validateUsername = (value) => {
   if (value.length === 0) {
-    return 'You need to enter your username';
+    return 'Enter your username';
   }
 
   return true;
 };
+
+export { validateEmail, validateName, validateUsername };

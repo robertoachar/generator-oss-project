@@ -1,9 +1,9 @@
-const Generator = require('yeoman-generator');
+import Generator from 'yeoman-generator';
 
-const files = require('./files');
-const validate = require('./validate');
+import files from './files';
+import { validateEmail, validateName, validateUsername } from './validate';
 
-module.exports = class extends Generator {
+class OSSGenerator extends Generator {
   initializing() {
     this.log('OSS Project Generator');
     this.log('❤️  Made with love by Roberto Achar');
@@ -30,21 +30,21 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'name',
         message: 'What is your name?',
-        validate: validate.validateName,
+        validate: validateName,
         store: true
       },
       {
         type: 'input',
         name: 'email',
         message: 'What is your email?',
-        validate: validate.validateEmail,
+        validate: validateEmail,
         store: true
       },
       {
         type: 'input',
         name: 'username',
         message: 'What is your GitHub username?',
-        validate: validate.validateUsername,
+        validate: validateUsername,
         store: true
       }
     ];
@@ -103,4 +103,6 @@ module.exports = class extends Generator {
     this.log();
     this.log('🎉  Successfully generated!');
   }
-};
+}
+
+export default OSSGenerator;

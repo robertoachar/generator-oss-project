@@ -21,7 +21,7 @@
     "coveralls",
     "badges"
   ],
-  "main": "generators/app/index.js",
+  "main": "generators/app/main.js",
   "scripts": {
     "coverage": "jest --colors --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
@@ -37,9 +37,11 @@
     "url": "https://github.com/robertoachar/generator-oss-project/issues"
   },
   "dependencies": {
+    "esm": "3.2.22",
     "yeoman-generator": "3.2.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "7.4.4",
     "@types/jest": "24.0.12",
     "@types/yeoman-generator": "3.1.2",
     "coveralls": "3.0.3",

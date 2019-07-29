@@ -57,6 +57,10 @@ class OSSGenerator extends Generator {
 
   writing() {
     this.log();
+    this.log('⚙  Initializing a GIT repository');
+    this.spawnCommandSync('git', ['init']);
+
+    this.log();
     this.log('🚀  Generating project...');
     this.log();
 

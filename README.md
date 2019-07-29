@@ -32,21 +32,25 @@ This generator provides the following features:
 |    |--- index.js
 |--- test
 |    |--- test.js
-|--- .editorconfig
-|--- .eslintignore
-|--- .eslintrc.json
-|--- .gitattributes
-|--- .gitignore
-|--- .npmrc
-|--- .prettierrc
-|--- .travis.yml
-|--- appveyor.yml
-|--- CHANGELOG.md
-|--- circle.yml
-|--- LICENSE
-|--- main.js
-|--- package.json
-|--- README.md
+├── .babelrc
+├── .editorconfig
+├── .eslintignore
+├── .eslintrc.json
+├── .gitattributes
+├── .gitignore
+├── .huskyrc.json
+├── .lintstagedrc.json
+├── .npmrc
+├── .prettierrc
+├── .travis.yml
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+├── appveyor.yml
+├── circle.yml
+├── commitlint.config.js
+├── main.js
+├── package.json
 ```
 
 ## Installation

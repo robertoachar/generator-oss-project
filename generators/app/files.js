@@ -21,8 +21,8 @@ const files = [
     template: 'commitlint.config.template',
     destination: 'commitlint.config.js'
   },
-  { template: 'huskyrc.json.template', destination: 'huskyrc.json' },
-  { template: 'lintstagedrc.json.template', destination: 'lintstagedrc.json' }
+  { template: 'huskyrc.json.template', destination: '.huskyrc.json' },
+  { template: 'lintstagedrc.json.template', destination: '.lintstagedrc.json' }
 ];
 
 export default files;

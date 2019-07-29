@@ -89,12 +89,17 @@ class OSSGenerator extends Generator {
 
     this.npmInstall(
       [
+        '@babel/core',
         '@babel/preset-env',
         '@types/jest',
         'coveralls',
+        '@commitlint/cli',
+        '@commitlint/config-conventional',
         'eslint',
         'eslint-config-prettier',
         'eslint-plugin-prettier',
+        'husky',
+        'lint-staged',
         'jest',
         'prettier'
       ],

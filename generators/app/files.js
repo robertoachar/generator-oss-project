@@ -16,7 +16,13 @@ const files = [
   { template: 'package.json.template', destination: 'package.json' },
   { template: 'prettierrc.template', destination: '.prettierrc' },
   { template: 'README.md.template', destination: 'README.md' },
-  { template: 'travis.yml.template', destination: '.travis.yml' }
+  { template: 'travis.yml.template', destination: '.travis.yml' },
+  {
+    template: 'commitlint.config.template',
+    destination: 'commitlint.config.js'
+  },
+  { template: 'huskyrc.json.template', destination: '.huskyrc.json' },
+  { template: 'lintstagedrc.json.template', destination: '.lintstagedrc.json' }
 ];
 
 export default files;

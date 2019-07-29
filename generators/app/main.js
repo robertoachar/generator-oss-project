@@ -57,6 +57,10 @@ class OSSGenerator extends Generator {
 
   writing() {
     this.log();
+    this.log('⚙  Initializing a GIT repository');
+    this.spawnCommandSync('git', ['init']);
+
+    this.log();
     this.log('🚀  Generating project...');
     this.log();
 
@@ -89,12 +93,17 @@ class OSSGenerator extends Generator {
 
     this.npmInstall(
       [
+        '@babel/core',
         '@babel/preset-env',
         '@types/jest',
         'coveralls',
+        '@commitlint/cli',
+        '@commitlint/config-conventional',
         'eslint',
         'eslint-config-prettier',
         'eslint-plugin-prettier',
+        'husky',
+        'lint-staged',
         'jest',
         'prettier'
       ],
